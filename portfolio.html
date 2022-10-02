@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/share?selection.family=Raleway:wght@700%7CRoboto:wght@400;500;700;900"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body class="body">
+    <!-- Шапка -->
+    <header class="header">
+      <!-- Навигация -->
+      <nav class="navigation">
+        <a class="navigation__logo logo" href="./index.html">
+          Web<span class="logo__part">Studio</span>
+        </a>
+        <ul class="navigation__list list">
+          <li class="list__item item">
+            <a class="item__link" href="./index.html">Студія</a>
+          </li>
+          <li class="list__item item">
+            <a class="item__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="list__item item">
+            <a class="item__link" href="#">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- эл.почта и телефон -->
+
+      <ul class="contacts">
+        <li class="contacts__item item">
+          <a class="item__link link link__mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="contacts__item item">
+          <a class="item__link link link__phone" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </header>
+    <!-- Основной контент -->
+    <main class="portfolio">
+      <!-- Скрытый заголовок -->
+      <h1 class="portfolio__title title title__hidden">Portfolio</h1>
+      <!-- Кнопки фильтра проектов портфолио-->
+      <section class="portfolio__filter filter">
+        <ul class="filter__list list">
+          <li class="list__item item">
+            <button class="item__button button" type="button">Усі</button>
+          </li>
+          <li class="list__item item">
+            <button class="item__button button" type="button">Веб-сайти</button>
+          </li>
+          <li class="list__item item">
+            <button class="item__button button" type="button">Додатки</button>
+          </li>
+          <li class="list__item item">
+            <button class="item__button button" type="button">Дизайн</button>
+          </li>
+          <li class="list__item item">
+            <button class="item__button button" type="button">Маркетинг</button>
+          </li>
+        </ul>
+      </section>
+      <!-- Проекты компании -->
+      <section class="portfolio__cards cards">
+        <ul class="cards__list list">
+          <li class="list__item item">
+            <img class="item__picture" src="./assets/images/jpg/portfolio-pic1.jpg" alt="" />
+            <h2 class="item__title">Технокряк</h2>
+            <p class="item__paragraph">Веб-сайт</p>
+          </li>
+          <li class="list__item item">
+            <img class="item__picture" src="./assets/images/jpg/portfolio-pic2.jpg" alt="" />
+            <h2 class="item-title">Постер New Orlean vs Golden Star</h2>
+            <p class="item__paragraph">Дизайн</p>
+          </li>
+          <li class="list__item item">
+            <img class="item__picture" src="./assets/images/jpg/portfolio-pic3.jpg" alt="" />
+            <h2 class="item__title">Ресторан Seafood</h2>
+            <p class="item__paragraph">Додаток</p>
+          </li>
+          <li class="list__item item">
+            <img class="item__picture" src="./assets/images/jpg/portfolio-pic4.jpg" alt="" />
+            <h2 class="item__title">Проєкт Prime</h2>
+            <p class="item__paragraph">Маркетинг</p>
+          </li>
+          <li class="list__item item">
+            <img class="item__picture" src="./assets/images/jpg/portfolio-pic5.jpg" alt="" />
+            <h2 class="item__title">Проєкт Boxes</h2>
+            <p class="item__paragraph">Додаток</p>
+          </li>
+          <li class="list__item item">
+            <img class="item__picture" src="./assets/images/jpg/portfolio-pic6.jpg" alt="" />
+            <h2 class="item__title">Inspiration has no Borders</h2>
+            <p class="item__paragraph">Веб-сайт</p>
+          </li>
+          <li class="list__item item">
+            <img class="item__picture" src="./assets/images/jpg/portfolio-pic7.jpg" alt="" />
+            <h2 class="item__title">Видання Limited Edition</h2>
+            <p class="item__paragraph">Дизайн</p>
+          </li>
+          <li class="list__item item">
+            <img class="item__picture" src="./assets/images/jpg/portfolio-pic8.jpg" alt="" />
+            <h2 class="item__title">Проєкт LAB</h2>
+            <p class="item__paragraph">Маркетинг</p>
+          </li>
+          <li class="list__item item">
+            <img class="item__picture" src="./assets/images/jpg/portfolio-pic9.jpg" alt="" />
+            <h2 class="item__title">Growing Business</h2>
+            <p class="item__paragraph">Додаток</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- Подвал -->
+    <footer class="footer">
+      <a class="footer__logo logo" href="./index.html">
+        Web<span class="logo__part">Studio</span>
+      </a>
+      <address class="address">
+        <ul class="address__list list">
+          <li class="list__item item">
+            <a
+              class="item__link link link__map"
+              href="https://goo.gl/maps/8viNXfXdV3uJQZfFA"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >м. Київ, пр-т Лесі Українки, 26</a
+            >
+          </li>
+          <li class="list__item item">
+            <a class="item__link link link__mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com
+            </a>
+          </li>
+          <li class="list__item item">
+            <a class="item__link link link__phone" href="tel:+380961111111">+38 096 111 11 11 </a>
+          </li>
+        </ul>
+      </address>
+    </footer>
+  </body>
+</html>
