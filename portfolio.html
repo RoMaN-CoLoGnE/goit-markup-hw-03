@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-      href="https://fonts.google.com/share?selection.family=Raleway:wght@700%7CRoboto:wght@400;500;700;900"
     />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link href="./assets/css/styles.css" rel="stylesheet" />
   </head>
 
   <body class="body">
@@ -47,76 +48,90 @@
       </ul>
     </header>
     <!-- Основной контент -->
-    <main class="portfolio">
-      <!-- Скрытый заголовок -->
-      <h1 class="portfolio__title title title__hidden">Portfolio</h1>
+    <main class="page__portfolio portfolio">
       <!-- Кнопки фильтра проектов портфолио-->
-      <section class="portfolio__filter filter">
-        <ul class="filter__list list">
-          <li class="list__item item">
+      <section class="portfolio__list list">
+        <ul class="list__filter filter">
+          <li class="filter__item item">
             <button class="item__button button" type="button">Усі</button>
           </li>
-          <li class="list__item item">
+          <li class="filter__item item">
             <button class="item__button button" type="button">Веб-сайти</button>
           </li>
-          <li class="list__item item">
+          <li class="filter__item item">
             <button class="item__button button" type="button">Додатки</button>
           </li>
-          <li class="list__item item">
+          <li class="filter__item item">
             <button class="item__button button" type="button">Дизайн</button>
           </li>
-          <li class="list__item item">
+          <li class="filter__item item">
             <button class="item__button button" type="button">Маркетинг</button>
           </li>
         </ul>
-      </section>
-      <!-- Проекты компании -->
-      <section class="portfolio__cards cards">
-        <ul class="cards__list list">
-          <li class="list__item item">
-            <img class="item__picture" src="./assets/images/jpg/portfolio-pic1.jpg" alt="" />
-            <h2 class="item__title">Технокряк</h2>
-            <p class="item__paragraph">Веб-сайт</p>
+        <!-- Проекты компании -->
+        <ul class="list__cards cards">
+          <li class="cards__item item">
+            <a class="item__link link" href="#">
+              <img class="link__picture" src="./assets/images/jpg/portfolio-pic1.jpg" alt="" />
+              <h2 class="link__title">Технокряк</h2>
+              <p class="link__paragraph">Веб-сайт</p>
+            </a>
           </li>
-          <li class="list__item item">
-            <img class="item__picture" src="./assets/images/jpg/portfolio-pic2.jpg" alt="" />
-            <h2 class="item-title">Постер New Orlean vs Golden Star</h2>
-            <p class="item__paragraph">Дизайн</p>
+          <li class="cards__item item">
+            <a class="item__link link" href="#">
+              <img class="link__picture" src="./assets/images/jpg/portfolio-pic2.jpg" alt="" />
+              <h2 class="link__title">Постер New Orlean vs Golden Star</h2>
+              <p class="link__paragraph">Дизайн</p>
+            </a>
           </li>
-          <li class="list__item item">
-            <img class="item__picture" src="./assets/images/jpg/portfolio-pic3.jpg" alt="" />
-            <h2 class="item__title">Ресторан Seafood</h2>
-            <p class="item__paragraph">Додаток</p>
+          <li class="cards__item item">
+            <a class="item__link link" href="#">
+              <img class="link__picture" src="./assets/images/jpg/portfolio-pic3.jpg" alt="" />
+              <h2 class="link__title">Ресторан Seafood</h2>
+              <p class="link__paragraph">Додаток</p>
+            </a>
           </li>
-          <li class="list__item item">
-            <img class="item__picture" src="./assets/images/jpg/portfolio-pic4.jpg" alt="" />
-            <h2 class="item__title">Проєкт Prime</h2>
-            <p class="item__paragraph">Маркетинг</p>
+          <li class="cards__item item">
+            <a class="item__link link" href="#">
+              <img class="link__picture" src="./assets/images/jpg/portfolio-pic4.jpg" alt="" />
+              <h2 class="link__title">Проєкт Prime</h2>
+              <p class="link__paragraph">Маркетинг</p>
+            </a>
           </li>
-          <li class="list__item item">
-            <img class="item__picture" src="./assets/images/jpg/portfolio-pic5.jpg" alt="" />
-            <h2 class="item__title">Проєкт Boxes</h2>
-            <p class="item__paragraph">Додаток</p>
+          <li class="cards__item item">
+            <a class="item__link link" href="#">
+              <img class="link__picture" src="./assets/images/jpg/portfolio-pic5.jpg" alt="" />
+              <h2 class="link__title">Проєкт Boxes</h2>
+              <p class="link__paragraph">Додаток</p>
+            </a>
           </li>
-          <li class="list__item item">
-            <img class="item__picture" src="./assets/images/jpg/portfolio-pic6.jpg" alt="" />
-            <h2 class="item__title">Inspiration has no Borders</h2>
-            <p class="item__paragraph">Веб-сайт</p>
+          <li class="cards__item item">
+            <a class="item__link link" href="#">
+              <img class="link__picture" src="./assets/images/jpg/portfolio-pic6.jpg" alt="" />
+              <h2 class="link__title">Inspiration has no Borders</h2>
+              <p class="link__paragraph">Веб-сайт</p>
+            </a>
           </li>
-          <li class="list__item item">
-            <img class="item__picture" src="./assets/images/jpg/portfolio-pic7.jpg" alt="" />
-            <h2 class="item__title">Видання Limited Edition</h2>
-            <p class="item__paragraph">Дизайн</p>
+          <li class="cards__item item">
+            <a class="item__link link" href="#">
+              <img class="link__picture" src="./assets/images/jpg/portfolio-pic7.jpg" alt="" />
+              <h2 class="link__title">Видання Limited Edition</h2>
+              <p class="link__paragraph">Дизайн</p>
+            </a>
           </li>
-          <li class="list__item item">
-            <img class="item__picture" src="./assets/images/jpg/portfolio-pic8.jpg" alt="" />
-            <h2 class="item__title">Проєкт LAB</h2>
-            <p class="item__paragraph">Маркетинг</p>
+          <li class="cards__item item">
+            <a class="item__link link" href="#">
+              <img class="link__picture" src="./assets/images/jpg/portfolio-pic8.jpg" alt="" />
+              <h2 class="link__title">Проєкт LAB</h2>
+              <p class="link__paragraph">Маркетинг</p>
+            </a>
           </li>
-          <li class="list__item item">
-            <img class="item__picture" src="./assets/images/jpg/portfolio-pic9.jpg" alt="" />
-            <h2 class="item__title">Growing Business</h2>
-            <p class="item__paragraph">Додаток</p>
+          <li class="cards__item item">
+            <a class="item__link link" href="#">
+              <img class="link__picture" src="./assets/images/jpg/portfolio-pic9.jpg" alt="" />
+              <h2 class="link__title">Growing Business</h2>
+              <p class="link__paragraph">Додаток</p>
+            </a>
           </li>
         </ul>
       </section>
