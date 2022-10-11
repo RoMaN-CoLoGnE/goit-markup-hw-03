@@ -31,6 +31,10 @@
   margin: 0 5px;
 }
 
+.cards__item .link__title {
+  margin-bottom: 4px;
+}
+
 .list__cards .item__link {
   background-color: var(--basic-white-color);
 }
@@ -47,4 +51,8 @@
   font-size: 16px;
   line-height: 1.87;
   color: var(--basic-grey-color);
+}
+
+.list__cards .item__content {
+  margin: 20px 0;
 }
