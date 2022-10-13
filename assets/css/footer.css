@@ -4,19 +4,16 @@
 }
 
 .footer__content {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.footer .d-flex {
-  flex-direction: column;
+.footer__address {
+  margin-top: 20px;
 }
 
 .item-center {
   margin: 9px 0;
-}
-
-.footer__logo {
-  margin-bottom: 11px;
 }
 
 .footer__logo .logo__part {

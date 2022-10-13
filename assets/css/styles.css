@@ -1,8 +1,12 @@
-/* Временный задний цвет, фон для видимости логотипа */
+
 .general {
   padding: 200px 0;
   text-align: center;
   background-color: var(--secondary-black-color);
+  /* background-image: url("../images/jpg/main-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
 }
 
 .general__title {
@@ -21,7 +25,6 @@
   margin-top: 30px;
 }
 
-/* Скрытые заголовки */
 .title__hidden {
   display: none;
 }

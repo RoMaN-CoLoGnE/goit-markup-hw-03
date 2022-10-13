@@ -1,7 +1,6 @@
 
-.list__filter .button {
+.list__filter .item__button {
   padding: 6px 25px;
-  margin-right: 8px;
   background-color: var(--secondary-grey-color);
   border-radius: 4px;
   font-family: inherit;
@@ -11,6 +10,14 @@
   text-align: center;
   color: var(--basic-black-color);
   cursor: pointer;
+}
+
+.list__filter .filter__item {
+  margin-right: 8px;
+}
+
+.list__filter .filter__item:last-child {
+  margin-right: 0;
 }
 
 .list__filter .button:hover,
@@ -23,23 +30,22 @@
 }
 
 .list__cards {
-  margin: 50px -5px 0;
+  margin-top: 50px;
 }
 
-.cards__item {
-  flex: 1 1 auto;
-  margin: 0 5px;
-}
-
-.cards__item .link__title {
-  margin-bottom: 4px;
+.list__cards .cards__item {
+  margin-bottom: 30px;
+  background-color: var(--basic-white-color);
+  border: 1px solid var(--alternative-white-color);
 }
 
 .list__cards .item__link {
+  display: block;
   background-color: var(--basic-white-color);
 }
 
 .list__cards .link__title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -54,5 +60,5 @@
 }
 
 .list__cards .item__content {
-  margin: 20px 0;
+  padding: 20px 24px;
 }

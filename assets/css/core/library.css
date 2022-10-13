@@ -14,9 +14,7 @@ body {
   background-color: var(--basic-white-color);
 }
 
-/* Обобщить и написать комментарий для отдельных групп */
-
-/* Классы для флексбокса (flexbox) */
+/* Классы для флекс-бокса (flexbox) */
 
 .d-flex {
   display: flex;
@@ -44,6 +42,8 @@ body {
 
 /* --- */
 
+/* Классы для цветовых стилей (color) */
+
 .text-white {
   color: var(--basic-white-color);
 }
@@ -52,11 +52,29 @@ body {
   background-color: var(--basic-blue-color);
 }
 
+/* Классы для контейнера (container) */
+
 .container {
   width: var(--base-container-width);
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.container-top-padding {
+  padding-top: var(--base-vertical-padding);
+}
+
+.container-bottom-padding {
+  padding-bottom: var(--base-vertical-padding);
+}
+
+.container-vertical-padding {
+  padding: var(--base-vertical-padding) 0;
+}
+
+/* --- */
+
+/* Классы для кнопки (button) */
 
 .button {
   padding: 10px 32px;
@@ -77,15 +95,6 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.container-top-padding {
-  padding-top: var(--base-vertical-padding);
-}
+/* --- */
 
-.container-bottom-padding {
-  padding-bottom: var(--base-vertical-padding);
-}
-
-.container-vertical-padding {
-  padding: var(--base-vertical-padding) 0;
-}
 
