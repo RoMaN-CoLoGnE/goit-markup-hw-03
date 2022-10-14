@@ -14,12 +14,25 @@ body {
   background-color: var(--basic-white-color);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Классы для флекс-бокса (flexbox) */
 
 .d-flex {
   display: flex;
 }
-
+ 
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -69,16 +82,16 @@ body {
 }
 
 .container-vertical-padding {
-  padding: var(--base-vertical-padding) 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* --- */
 
 /* Классы для кнопки (button) */
 
-.button {
+/* .button {
   padding: 10px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   font-family: inherit;
@@ -88,12 +101,13 @@ body {
   letter-spacing: 0.06em;
   text-align: center;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button:focus, .button:active, .button:hover {
   background-color: var(--secondary-blue-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+} */
 
 /* --- */
 

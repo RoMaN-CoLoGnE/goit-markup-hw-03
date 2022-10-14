@@ -1,6 +1,6 @@
 .header {
   background-color: var(--basic-white-color);
-  border: 1px solid var(--header-border-grey-color);
+  border-bottom: 1px solid var(--header-border-grey-color);
 }
 
 .navigation__list {

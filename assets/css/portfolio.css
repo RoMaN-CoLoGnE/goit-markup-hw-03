@@ -1,6 +1,10 @@
 
+.list__filter {
+  gap: 8px;
+}
+
 .list__filter .item__button {
-  padding: 6px 25px;
+  padding: 6px 22px;
   background-color: var(--secondary-grey-color);
   border-radius: 4px;
   font-family: inherit;
@@ -10,14 +14,7 @@
   text-align: center;
   color: var(--basic-black-color);
   cursor: pointer;
-}
-
-.list__filter .filter__item {
-  margin-right: 8px;
-}
-
-.list__filter .filter__item:last-child {
-  margin-right: 0;
+  box-shadow: none;
 }
 
 .list__filter .button:hover,
@@ -31,17 +28,22 @@
 
 .list__cards {
   margin-top: 50px;
+  gap: 30px;
 }
 
 .list__cards .cards__item {
-  margin-bottom: 30px;
   background-color: var(--basic-white-color);
-  border: 1px solid var(--alternative-white-color);
 }
 
 .list__cards .item__link {
   display: block;
   background-color: var(--basic-white-color);
+}
+
+.cards__item .link__picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list__cards .link__title {
@@ -53,7 +55,7 @@
   color: var(--basic-black-color);
 }
 
-.list__cards .link__paragraph {
+.list__cards .link__category {
   font-size: 16px;
   line-height: 1.87;
   color: var(--basic-grey-color);
@@ -61,4 +63,6 @@
 
 .list__cards .item__content {
   padding: 20px 24px;
+  border: 1px solid var(--alternative-white-color);
+  border-top: none;
 }

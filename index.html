@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link href="./assets/css/core/library.css" rel="stylesheet" />
     <link href="./assets/css/core/variables.css" rel="stylesheet" />
     <link href="./assets/css/styles.css" rel="stylesheet" />
@@ -67,10 +70,10 @@
       </section>
 
       <!-- Плюсы компании -->
-      <section class="features container container-top-padding">
+      <section class="features">
         <!-- Скрытый заголовок -->
-        <div class="d-flex">
-          <h2 class="features__title title title__hidden">Особливості нашої роботи</h2>
+        <div class="d-flex container container-top-padding">
+          <h2 class="features__title title visually-hidden">Особливості нашої роботи</h2>
           <ul class="features__list list d-flex">
             <li class="list__item item">
               <h3 class="item__title">Увага до деталей</h3>
@@ -100,89 +103,92 @@
         </div>
       </section>
       <!-- Чем занимается компания -->
-      <section class="gallery container container-vertical-padding">
-        <h2 class="gallery__title">Чим ми займаємося</h2>
-        <ul class="gallery__list list d-flex justify-content-center">
-          <li class="list__item item">
-            <img
-              class="item__picture"
-              src="./assets/images/jpg/img-our-work1.jpg"
-              alt="Програмування вебсайтів та додатків"
-              width="370"
-            />
-          </li>
-          <li class="list__item item">
-            <img
-              class="item__picture"
-              src="./assets/images/jpg/img-our-work2.jpg"
-              alt="Адаптивний веб-дизайн сайтів"
-              width="370"
-            />
-          </li>
-          <li class="list__item item">
-            <img
-              class="item__picture"
-              src="./assets/images/jpg/img-our-work3.jpg"
-              alt="Вибір кольору та дизайну сайту"
-              width="370"
-            />
-          </li>
-        </ul>
+      <section class="gallery">
+        <div class="container container-vertical-padding">
+          <h2 class="gallery__title">Чим ми займаємося</h2>
+          <ul class="gallery__list list d-flex justify-content-center">
+            <li class="list__item item">
+              <img
+                class="item__picture"
+                src="./assets/images/jpg/img-our-work1.jpg"
+                alt="Програмування вебсайтів та додатків"
+                width="370"
+              />
+            </li>
+            <li class="list__item item">
+              <img
+                class="item__picture"
+                src="./assets/images/jpg/img-our-work2.jpg"
+                alt="Адаптивний веб-дизайн сайтів"
+                width="370"
+              />
+            </li>
+            <li class="list__item item">
+              <img
+                class="item__picture"
+                src="./assets/images/jpg/img-our-work3.jpg"
+                alt="Вибір кольору та дизайну сайту"
+                width="370"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Наша команда -->
-      <section class="our-team container-vertical-padding">
-        <h2 class="our-team__title">Наша команда</h2>
-        <ul class="our-team__list list d-flex justify-content-center container">
-          <li class="list__item item">
-            <img
-              class="item__picture"
-              src="./assets/images/jpg/img-employee1.jpg"
-              alt="Ігор Дем'яненко"
-              width="270"
-            />
-            <div class="item__content">
-              <h3 class="item__title">Ігор Дем'яненко</h3>
-              <!-- TODO paragraph менять на другое, пример - position -->
-              <p class="item__position">Product Designer</p>
-            </div>
-          </li>
-          <li class="list__item item">
-            <img
-              class="item__picture"
-              src="./assets/images/jpg/img-employee2.jpg"
-              alt="Ольга Рєпіна"
-              width="270"
-            />
-            <div class="item__content">
-              <h3 class="item__title">Ольга Рєпіна</h3>
-              <p class="item__position">Frontend Developer</p>
-            </div>
-          </li>
-          <li class="list__item item">
-            <img
-              class="item__picture"
-              src="./assets/images/jpg/img-employee3.jpg"
-              alt="Микола Тарасов"
-              width="270"
-            />
-            <div class="item__content">
-              <h3 class="item__title">Микола Тарасов</h3>
-              <p class="item__position">Marketing</p>
-            </div>
-          </li>
-          <li class="list__item item">
-            <img
-              class="item__picture"
-              src="./assets/images/jpg/img-employee4.jpg"
-              alt="Михайло Єрмаков"
-              width="270"
-            />
-            <div class="item__content">
-              <h3 class="item__title">Михайло Єрмаков</h3>
-            <p class="item__position">UI Designer</p>
-            </div>
-          </li>
-        </ul>
+      <section class="our-team">
+        <div class="container container-vertical-padding">
+          <h2 class="our-team__title">Наша команда</h2>
+          <ul class="our-team__list list d-flex justify-content-center">
+            <li class="list__item item">
+              <img
+                class="item__picture"
+                src="./assets/images/jpg/img-employee1.jpg"
+                alt="Ігор Дем'яненко"
+                width="270"
+              />
+              <div class="item__content">
+                <h3 class="item__title">Ігор Дем'яненко</h3>
+                <p class="item__position">Product Designer</p>
+              </div>
+            </li>
+            <li class="list__item item">
+              <img
+                class="item__picture"
+                src="./assets/images/jpg/img-employee2.jpg"
+                alt="Ольга Рєпіна"
+                width="270"
+              />
+              <div class="item__content">
+                <h3 class="item__title">Ольга Рєпіна</h3>
+                <p class="item__position">Frontend Developer</p>
+              </div>
+            </li>
+            <li class="list__item item">
+              <img
+                class="item__picture"
+                src="./assets/images/jpg/img-employee3.jpg"
+                alt="Микола Тарасов"
+                width="270"
+              />
+              <div class="item__content">
+                <h3 class="item__title">Микола Тарасов</h3>
+                <p class="item__position">Marketing</p>
+              </div>
+            </li>
+            <li class="list__item item">
+              <img
+                class="item__picture"
+                src="./assets/images/jpg/img-employee4.jpg"
+                alt="Михайло Єрмаков"
+                width="270"
+              />
+              <div class="item__content">
+                <h3 class="item__title">Михайло Єрмаков</h3>
+                <p class="item__position">UI Designer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Подвал -->
